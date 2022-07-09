@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Document type decleration-->
+<html>
+
+<head>
+	<title>Home</title>
+	<meta name="description" content="Introduction" />
+	<meta name="author" content="Mausam Rai" />
+	<meta name="keyword" content="JS, CSS, HTML, Blog, Portfolio, CV, research">
+	<!--linking External CSS-->
+	<link rel="stylesheet" type="text/css" href="./css/Style.css">
+	<!--internal CSS-->
+	<style>
+		.box {
+			background-color: #BDBCBC;
+			opacity: 100%;
+			width: 65%;
+			height: 75%;
+			position: absolute;
+			left: 50%;
+			right: 70%;
+			top: 50%;
+			margin-top: 70px;
+			margin-bottom: 120px;
+			transform: translate(-50%, -50%);
+			font-family: verdana;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		.img {
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<!--this is for construction of navigation bar-->
+		<nav>
+			<table style="width: 50% ;padding: 15px;color: white;float: right;">
+				<th class="current"><a href="./Home.html">Home</th>
+				<th class="menu"><a href="./html/Research.html">Research</th>
+				<th class="menu"><a href="./html/Blog.html">Blog</th>
+				<th class="menu"><a href="./html/CV.html">CV</th>
+				<th class="menu"><a href="./html/Contact.html">Contact</th>
+				<div class="mausam">Mausam Chamling Rai</div>
+			</table>
+		</nav>
+	</header><br>
+	<hr>
+	<!--For desiging the article part -->
+	<div class="box">
+		<section>
+			<!--Internal CSS-->
+			<style text type="text/CSS"> h2{color: rgb(83, 58, 20);}
+			 </style>
+			<h2>
+				<ul>"Work hard in silence and let success make the noise"</ul>
+			</h2>
+
+			<div style="margin-left: 250px;">
+				<img src="./image/hee.jpg" class="img hide" id="image1" alt="mausam1">
+				<img src="./image/meugly.jpg" class="img hide" id="image2" alt="mausam2">
+				<button onclick="Toggle_images()">Next</button>
+
+				<script>
+					//Internal JS for toggel validation
+					function Toggle_images() {
+						var p1 = document.getElementById("image1");
+						var p2 = document.getElementById("image2");
+						//To get the certain action done after clicking the next button
+						if (p1.style.display == "none") {
+							p1.style.display = "block"; //display image1
+							p2.style.display = "none"; //hide image2
+						} else {
+							p1.style.display = "none"; //hide image1
+							p2.style.display = "block"; //display image2
+						}
+					}
+					document.getElementById("image1").style.display = "block";
+				</script>
+			</div>
+		</section>
+		<p>Hello, Welcome to my portfolio website. I am Mausam Chamling Rai. I am currently studying Bsc (hons)
+			Computing at Islington College, Kamalpokhari, Kathmandu.I am currently living in lalitpur,nepal to complete
+			my studies.</p>
+
+		<!--Designing section-->
+		<section class="a">
+			To know more about me, Follow:
+			<!--It takes to the creator instagram ID-->
+			<a href="https://www.instagram.com/__gautam_rai_/"><img src="./image/Instagram.jpg" alt="instagram"
+					width="30" height="30"></a>
+			<!--Itt takes to the creator facebook ID-->
+			<a href="https://www.facebook.com/profile.php?id=100008175784115"><img src="./image/facebook.jpg"
+					alt="facebook" width="30" height="30"> </a>
+			<!--It takes to the creator twitter ID-->
+			<a href="https://twitter.com/Chamlin29163156"></a><img src="./image/tweetero.jpg" alt="tweeter" width="30"
+				height="30"> </a>
+		</section>
+	</div>
+	</div>
+</body>
+
+</html>

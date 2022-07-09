@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--Document type decleration-->
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta name="description" content="Introduction" />
+    <meta name="author" content="Mausam Rai" />
+    <meta name="keyword" content="JS, CSS, HTML, Blog, Portfolio, CV, research">
+    <!--linking external css-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!--Internal CSS-->
+    <style>
+        form {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<!--linking External JS-->
+<script src="../java/script.js"></script>
+
+<body>
+    <div class="mausam">Mausam Chamling Rai</div>
+    <header>
+        <div>
+            <!--this is for navigation bar decleration-->
+            <nav>
+                <!--Inline CSS-->
+                <table style="width: 50% ;padding: 15px;color: white;float: right;">
+                    <tr>
+                        <th class="menu"><a href="../Home.html">Home</th>
+                        <th class="menu"><a href="../html/Research.html">Research</th>
+                        <th class="menu"><a href="./Blog.html">Blog</th>
+                        <th class="menu"><a href="./CV.html">CV</th>
+                        <th class="current"><a href="./Contact.html">Contact</th>
+                    </tr>
+                </table>
+            </nav>
+        </div>
+    </header><br>
+    <hr>
+
+    <body>
+        <!--To design the form-->
+        <div class="Boxcontact" style="border: solid;border-style: groove;">
+
+            <h2 style="text-align: center;">we are always there when u need.If you have any query fill the form.</h2>
+            <br>
+            <form name="messageForm" onsubmit="validateForm()">
+                <b>First name:<br><input type="text" id="firstname" name="firstname"><br>
+                    Last Name:<br><input type="text" id="lastname" name="lastname"><br>
+                    Gender:<br><input type="radio" name="gender" value="Male">male<input type="radio" name="gender"
+                        value="female">female<input type="radio" name="others" value="others">others<br>
+                    Helpful:<br><input type="checkbox" name="feedback 1" value="Yes,it was">Yes<input type="checkbox"
+                        name="Feedback 2" value="No,it wasn'nt">No<br><br>
+                    Message:<br><textarea id="message" name="Message" rows="10" cols="20"
+                        placeholder="Help us change anything"></textarea><br>
+                    <input type="submit"><br><br>
+                    <hr>
+            </form></br>
+            <!--Designing section-->
+            <div class="media">
+                <section>
+                    <!--It takes to the user instagram ID-->
+                    <a href="https://www.instagram.com/__gautam_rai_/"><img src="../image/Instagram.jpg" alt="instagram"
+                            width="30" height="30"></a>
+                    <!--It takes to the user Facebook ID-->
+                    <a href="https://www.facebook.com/profile.php?id=100008175784115"><img src="../image/facebook.jpg"
+                            alt="facebook" width="30" height="30"> </a>
+                    <!--It takes to teh user tweeter ID-->
+                    <a href="https://twitter.com/Chamlin29163156"></a><img src="../image/tweetero.jpg" alt="tweeter"
+                        width="30" height="30"> </a>
+                    <section>
+            </div>
+            <footer style="color: white; text-align: 70%;">
+                @Mausam Rai @islington College
+
+            </footer>
+        </div>
+        <script>
+            //Internal JS for alert message
+            function validateForm() {
+                var fname = document.forms["messageForm"]["firstname"].value;
+                var lname = document.forms["messageForm"]["lastname"].value;
+                var gender = document.forms["messageForm"]["gender"].value;
+                var message = document.forms["messageForm"]["message"].value;
+                //Alert message popup when certain data are placed
+                if (fname == "" || lname == "" || message == "") {
+                    alert("Empty fields found. Please fill the form.");
+                } else {
+                    alert("Thank you for the feedback.");
+                }
+            }
+        </script>
+    </body>
+
+</html>

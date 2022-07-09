@@ -1,0 +1,123 @@
+/*navigation bar styles */
+nav {
+	background-color: white;
+	align-content: right;
+	font-family: arial;
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+}
+
+/*body styles*/
+body {
+	width: 100%;
+	height: 75%;
+	background-image: url(../image/penbg.jpg);
+	background-size: cover;
+
+}
+
+/*hover styles*/
+a:hover {
+	color: rgb(89, 106, 252);
+}
+
+/*current page styles*/
+.current {
+	background-color: whitesmoke;
+}
+
+/*to bring horizontal line*/
+hr {
+	border-bottom: 1px solid black;
+}
+
+/*giving position and shape of the content*/
+.space {
+	width: 75%;
+	background-color: transparent;
+	align-content: center;
+	margin: auto;
+	padding: auto;
+	opacity: 75;
+	margin-top: 100px;
+}
+
+/*to design the content inside the blog page*/
+.xxx {
+	background-color: #ffffff;
+	opacity: 0.75;
+	width: 75%;
+	height: 130%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	align-content: center;
+	margin-top: 250px;
+	margin-bottom: 250000034345345px;
+}
+
+/*To design and give shape to teh content*/
+.a {
+	background-image: unset;
+	margin-right: 70px;
+
+}
+
+.cv {
+	background-color: #74c0f3;
+	opacity: 75;
+	width: 50%;
+	height: 104%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	align-content: center;
+	margin-top: 120px;
+}
+
+/*to design the section part in every page*/
+.media {
+
+	left: 40%;
+	position: absolute;
+	opacity: 75;
+}
+
+/*To give decoration to the heading text*/
+.mausam {
+	text-align: left;
+	left: 70%;
+	font-size: xx-large;
+	font-family: cursive;
+	color: rgb(77, 83, 83);
+	background-color: white;
+}
+
+/*To put the whole content inside the content and design the page*/
+.Boxcontact {
+	background-color: #e2f380;
+	opacity: 0.85;
+	width: 70%;
+	height: 95%;
+	position: absolute;
+	left: 50%;
+	right: 70%;
+	top: 50%;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	transform: translate(-50%, -50%);
+	font-family: verdana;
+}
+
+/*To create the row within the page*/
+.row {
+	display: flex;
+}
+
+/*To divide the row*/
+.half {
+	flex: 60%;
+	left: 800%;
+}

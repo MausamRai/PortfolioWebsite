@@ -1,0 +1,55 @@
+.Mausam {
+	left: 70%;
+	font-size: xx-large;
+	font-family: cursive;
+	color: rgb(106, 20, 245);
+	background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.Box{
+    background-color: #fcc4cc;
+	opacity: 75;
+	width: 75%;
+	height: 100%;
+	/* left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%); */
+	align-content: center;
+	margin-top: 100px;
+    margin-bottom: 50px;
+	align-self: center;
+	display: flex;
+	
+}
+
+.div
+{
+	display: flex;
+	flex-direction: column;
+}
+/*hover styles
+a:hover {
+	color: rgb(89, 106, 252);
+}
+*/
+.current {
+	background-color: whitesmoke;
+}
+.Firsthalf{
+    display: flex;
+	flex-direction: column;
+}
+.Secondhalf{
+    flex: 120%;
+    /* left: 800%; */
+	height: 100px
+	;
+}
+.Contact{
+    left: 0%;
+    
+	opacity: 100%;
+	align-content: center;
+}
